@@ -33,6 +33,10 @@ int before_use_haveblock_number = 0;
 //設置するブロックの数　blocktypeに応じて変化
 int previewblocknum = 0;
 
+
+//1ステージに何個ブロックを使ったか
+static int blockscore = 0;
+
 BLOCK InitDate[] =
 {
 
@@ -643,4 +647,9 @@ bool FalseExistCheck()
 	}
 
 	return false;
+}
+
+void ScoreBlock()
+{
+	
 }

@@ -100,3 +100,6 @@ void FalsePreviewBlock();
 
 //falseが存在するかどうかチェックする	全部trueの時は買ったブロックを使い切ったということになる
 bool FalseExistCheck();
+
+//1ステージでブロックを何個使ったか scoreに送るためだけの関数
+void ScoreBlock();

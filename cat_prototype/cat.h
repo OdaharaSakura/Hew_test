@@ -39,6 +39,8 @@ struct CAT
 	float jump_y;
 	//ジャンプ限界高度
 	float limit_jump;
+	//ゴールフラグ
+	bool goal_flag;
 };
 
 //プロトタイプ宣言
@@ -59,3 +61,6 @@ void CatJump(float jumpheight);
 
 //
 void ChangeMoveFlag(CAT* c);
+
+//ゴールしたかどうか返すフラグ
+bool GetGoalFlag();
