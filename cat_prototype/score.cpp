@@ -49,21 +49,21 @@ void UpdateScore(void)
 
 void DrawScore(void)
 {
-	{
-		int score = g_Score;;
+	//{
+	//	int score = g_Score;;
 
-		for (int i = 0; i < 5; i++)
-		{
-			//1の位の数値を取り出す
-			int suuji = score % 10;;
+	//	for (int i = 0; i < 5; i++)
+	//	{
+	//		//1の位の数値を取り出す
+	//		int suuji = score % 10;;
 
-			DrawSpriteLeftTop(g_TextureNo, 650.0f - (32.0f*i), 20.0f, 32.0f, 32.0f,
-				0.077f*suuji, 0.0f, 0.077f, 1.0f);
+	//		DrawSpriteLeftTop(g_TextureNo, 650.0f - (32.0f*i), 20.0f, 32.0f, 32.0f,
+	//			0.077f*suuji, 0.0f, 0.077f, 1.0f);
 
-			//数値全体を10で割る
-			score /= 10;
-		}
-	}
+	//		//数値全体を10で割る
+	//		score /= 10;
+	//	}
+	//}
 
 }
 
