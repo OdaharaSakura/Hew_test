@@ -30,12 +30,15 @@ int use_haveblock_number = 0;
 int before_use_haveblock_number = 0;
 
 
+
 //設置するブロックの数　blocktypeに応じて変化
 int previewblocknum = 0;
 
 
 //1ステージに何個ブロックを使ったか
 static int blockscore = 0;
+//使ったブロックを計算するために使う
+int bs = 0;
 
 BLOCK InitDate[] =
 {
@@ -62,6 +65,8 @@ HRESULT InitBlock()
 
 	use_haveblock_number = 0;
 	before_use_haveblock_number = 0;
+	blockscore = 0;
+	bs = 0;
 	//テクスチャロード 画像の名前を入れよう
 
 	//構造体の初期化
@@ -649,7 +654,17 @@ bool FalseExistCheck()
 	return false;
 }
 
-void ScoreBlock()
+//使ったブロックの数を調べるために使う
+static int BlockScore()
 {
-	
+	bs = 0;
+	for (int i = 0; i < MOVE_BLOCK_MAX; i++)//射出するブロック全て調べる
+	{
+		if (g_MoveBlock[i].use == true)//使っていたら
+		{
+			bs++;
+		}
+	}
+	blockscore = bs;
+	return blockscore;
 }

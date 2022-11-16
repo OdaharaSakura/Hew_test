@@ -7,6 +7,7 @@
 #include "Scene.h"
 #include "sound.h"
 #include "collision.h"
+#include "timer.h"
 
 //マクロ定義
 
@@ -110,6 +111,14 @@ void UpdateCat()
 		//g_Cat.pos.x = CAT_INIT_X;
 		//g_Cat.pos.y = CAT_INIT_Y;
 		g_Cat.goal_flag = true;//ゴールフラグON
+
+		//シーン遷移するまでUseがtrueのままじゃない。。する前に計算するしかない
+		//関数作って後で移動させる
+		
+
+		//スコアシーンに遷移
+		SetScene(SCENE_SCORE);
+
 	}
 	//猫が穴に落ちてしまった場合
 	if (g_Cat.pos.y >= SCREEN_HEIGHT)

@@ -10,6 +10,9 @@
 
 #include "texture.h"
 #include "sprite.h"
+#include "cat.h"
+#include "block.h"
+#include "timer.h"
 
 
 //*****************************************************************************
@@ -23,8 +26,9 @@
 //*****************************************************************************
 // グローバル変数
 //*****************************************************************************
-static int g_TextureNo;	// テクスチャ識別子
-static int g_Score;
+static int g_TextureNo = 0;	// テクスチャ識別子
+static int g_Score = 0;
+int Score = 0;
 
 
 //=============================================================================
@@ -43,27 +47,27 @@ void UninitScore(void)
 
 void UpdateScore(void)
 {
-
+	BlockScore();//計算しとく
 }
 
 
 void DrawScore(void)
 {
-	//{
-	//	int score = g_Score;;
+	{
+		int score = g_Score;
 
-	//	for (int i = 0; i < 5; i++)
-	//	{
-	//		//1の位の数値を取り出す
-	//		int suuji = score % 10;;
+		for (int i = 0; i < 5; i++)
+		{
+			//1の位の数値を取り出す
+			int suuji = score % 10;;
 
-	//		DrawSpriteLeftTop(g_TextureNo, 650.0f - (32.0f*i), 20.0f, 32.0f, 32.0f,
-	//			0.077f*suuji, 0.0f, 0.077f, 1.0f);
+			DrawSpriteLeftTop(g_TextureNo, 650.0f - (32.0f*i), 20.0f, 32.0f, 32.0f,
+				0.077f*suuji, 0.0f, 0.077f, 1.0f);
 
-	//		//数値全体を10で割る
-	//		score /= 10;
-	//	}
-	//}
+			//数値全体を10で割る
+			score /= 10;
+		}
+	}
 
 }
 

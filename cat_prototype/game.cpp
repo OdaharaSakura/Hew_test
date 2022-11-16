@@ -10,6 +10,7 @@
 #include "collision.h"
 #include "sound.h"
 #include "blocktype.h"
+#include "score.h"
 
 //マクロ定義
 //あとはタイム表示、
@@ -39,6 +40,7 @@ void InitGame()
 	InitCat();
 	InitBlock();
 	InitCollsion();
+	InitScore();
 
 	///////////////////////////////
 }
@@ -68,6 +70,7 @@ void UpdateGame()
 	UpdateCat();
 	UpdateBlock();
 	UpdateCollision();
+	UpdateScore();
 	////////////////ゲーム関連
 }
 //描画処理

@@ -102,4 +102,4 @@ void FalsePreviewBlock();
 bool FalseExistCheck();
 
 //1ステージでブロックを何個使ったか scoreに送るためだけの関数
-void ScoreBlock();
+int BlockScore();

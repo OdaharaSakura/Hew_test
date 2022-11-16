@@ -6,6 +6,7 @@
 ///////////////////////ƒOƒ[ƒoƒ‹éŒ¾
 static TIMER g_time[TIME_MAX];
 int TimerFrame;
+int ClearTime;
 
 TIMER InitDate[] =
 {
@@ -95,4 +96,15 @@ TIMER *GetTime()
 int GetFirstFrame()
 {
 	return TimerFrame;
+}
+
+int GetTimer()
+{
+
+}
+
+static int ResultTimer()
+{
+
+
 }
