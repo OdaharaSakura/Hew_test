@@ -22,6 +22,8 @@ void SetVolume(int index, float vol);//volume変更
 // 4.弾,爆発等も初期化でロードはしておく
 // 5.再生はそれぞれのタイミングで行うが,ループごとに
 //   毎回再生されないように注意
-//hahahahahahahahahahahahaha
-//sasakadakaahciullifud
-//jdauwdhwhdp8asyhpdiahs;doih;ow
+
+
+
+
+//sasasasasaasasa
