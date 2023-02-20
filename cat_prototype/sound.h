@@ -25,3 +25,7 @@ void SetVolume(int index, float vol);//volume•ÏX
 //hahahahahahahahahahahahaha
 //sasakadakaahciullifud
 //jdauwdhwhdp8asyhpdiahs;doih;ow
+
+
+
+//kakkakakakakakakakakakaka
