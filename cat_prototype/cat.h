@@ -64,3 +64,6 @@ void ChangeMoveFlag(CAT* c);
 
 //ƒS[ƒ‹‚µ‚½‚©‚Ç‚¤‚©•Ô‚·ƒtƒ‰ƒO
 bool GetGoalFlag();
+
+
+//main
