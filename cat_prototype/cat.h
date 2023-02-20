@@ -66,5 +66,4 @@ void ChangeMoveFlag(CAT* c);
 bool GetGoalFlag();
 
 
-//sakura
-
+//main
