@@ -26,4 +26,4 @@ void SetVolume(int index, float vol);//volume•ÏX
 
 
 
-//sakura
+//main
