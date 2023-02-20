@@ -23,3 +23,5 @@ void SetVolume(int index, float vol);//volume変更
 // 5.再生はそれぞれのタイミングで行うが,ループごとに
 //   毎回再生されないように注意
 //hahahahahahahahahahahahaha
+//sasakadakaahciullifud
+//jdauwdhwhdp8asyhpdiahs;doih;ow
